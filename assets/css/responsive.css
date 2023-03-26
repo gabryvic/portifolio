@@ -1,0 +1,151 @@
+@media screen and (max-width: 340px) {
+    .container{
+        margin-inline: 1rem;
+    }
+
+    .nav-menu{
+        padding-bottom: 2rem;
+    }
+
+    .nav-list{
+        gap: 1rem 1.25rem;
+    }
+
+    .home-info{
+        align-items: center;
+   justify-content: center;
+   
+   
+    }
+}
+
+@media screen and (min-width: 576px) {
+    
+    .nav,
+    .nav-menu{
+        width: 380px;
+
+    }
+    .nav{
+        margin: 0 auto !important;
+    }
+
+
+    .home-info{
+        text-align: center;
+        align-items: center;
+     justify-content: center;
+   
+
+    }
+
+    .sobre-container,
+    .footer-container
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .experiencia-titulo{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    
+
+
+}
+@media screen and (min-width: 768px) {
+    .home-container{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    .home-dados{
+        order: 2;
+    }
+    .home-info:nth-child(3){
+        order: 3;
+        text-align: right;
+    }
+
+    .home-info{
+        margin-top: 10rem;
+    }
+    .home-info-descricao{
+        padding-right: 0;
+    }
+
+    .sobre-descricao{
+        margin-top: 2rem;
+    }
+
+    
+
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .header{
+        top:0 !important;
+        bottom: initial !important;
+        transition: .4s;
+    }
+
+    .nav{
+        width: initial !important;
+        height: calc(var(--header-height) + 1.5rem) !important;
+        border-radius: none !important;
+        box-shadow: none !important;
+        column-gap: 3rem !important;
+        margin-inline: 1.2rem !important;
+        padding: 0 !important;
+    }
+
+    .nav-link i, .nav-abre, .nav-fecha{
+        display: none !important;
+    }
+
+    .nav-menu{
+        width: initial !important;
+        margin-left: auto !important;
+        background-color: var(--body-color) !important;
+        transition: backgroun .4s !important;
+    }
+
+    .nav-list{
+        display: flex !important;
+        column-gap: 3rem !important;
+    }
+
+    .nav-link{
+        font-size: var(--normal-font-size) !important;
+    }
+
+    .section{
+        padding-block: 7rem 0 !important;
+    }
+
+    
+}
+
+@media screen and (min-width: 1048px){
+    .container{
+        margin-inline: auto !important;
+    }
+
+    .home-info{
+        text-align: left;
+        align-items: center;
+    
+}
+
+.experiencia-sections{
+    display: flex;
+    gap: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 8rem;
+}
+
+
+
+}
